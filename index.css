@@ -1,0 +1,960 @@
+/* main page navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+/* item of navbar */
+.nav-link {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.name:active{
+  color: red;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(243, 183, 53, 0.952);
+}
+
+
+
+/* text of main page  */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+.fcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.head1 {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.head2 {
+  color: white;
+}
+
+.head3 {
+  padding: 10px;
+  margin-top: 30px;
+  color: white;
+  border: 3px solid rgb(255, 157, 0);
+  border-radius: 25px;
+}
+/* responsivenesss  */
+
+@media (max-width:825px) {
+  .head1{
+    font-size: 2rem;
+  }
+  .head2{
+    font-size: 1rem;
+  }
+  .head3{
+    font-size: 1rem;
+  }
+  .container{
+    margin-left: 35%;
+    margin-right: 30%;
+  }
+.main1{
+  background: url('img/bg2.jpg');
+  background-size: 100%;
+  height: 100vh; 
+}
+.cbtn{
+  margin-bottom: 20%;
+}
+.fcontainer{
+  margin-top: 30%;
+}
+}
+
+/* coming soon  */
+
+.cbtn{
+  margin-left: 43%;
+  margin-right: 42%;
+  margin-top: 4%;
+}
+.card {
+  width: 200px;
+}
+
+.csbtn {
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+}
+
+.csbtn:hover {
+  text-decoration: none;
+  color: white;
+
+}
+
+.btn-secondary:hover {
+  color: white;
+  background-color: rgb(32, 32, 32);
+}
+
+.loginlink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.loginlink {
+  color: white;
+}
+
+/* to set bg image  */
+.container::before {
+  content: "";
+  background: url('img/bg1.jpg');
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* COMING SOON BOOKS CSS  */
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#cshead {
+  font-size: 50px;
+  display: inline-block;
+  /* margin-left: 590px; */
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 90px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: cursive;
+  border: 2px solid black;
+  border-radius: 35px;
+  background-color: rgb(233, 168, 94);
+  color: rgb(0, 0, 0);
+}
+
+.maincontainer::before {
+  content: "";
+  background: url('img/bg1.jpg');
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* Giving responsiveness */
+@media only screen and (max-width: 900px) {
+  .main2{
+    background: url('img/bg2.jpg');
+    background-size: 100%;
+    height: 100vh; 
+  }
+}
+@media only screen and (max-width: 700px) {
+  #cshead{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 420px) {
+ /* .card-img-top{
+width: 100px              ;
+ } */
+ .cardimg{
+  width: 130px;
+ }
+ .card{
+width: 130px;
+  margin: 0px;
+  padding: 0px;
+ }
+  
+}
+
+/* login page css  */
+
+* {
+  box-sizing: border-box
+}
+
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.btn2 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn2:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container2 {
+  padding: 16px;
+  width: 600px;
+  margin: auto;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 1080px) {
+  .container2 {
+    margin-top: 200px;
+  }
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 700px) {
+  .container2{
+    width: 90%;
+  }
+
+}
+
+/* book page css */
+/* styling book1 */
+#book1 {
+  width: 250px;
+  float: left;
+  margin: 20px;
+}
+
+#parabook1 {
+  clear: right;
+  margin-top: 40px;
+}
+
+.container3 {
+  margin: 3PX;
+  padding: 3px;
+  width: 600px;
+  border: 3px solid blaCK;
+}
+
+.bookbtn {
+  width: 180px;
+  margin: 30px;
+}
+
+/* styling book 2 */
+
+#book2 {
+  width: 250px;
+  float: left;
+  margin: 20px;
+
+}
+
+#parabook2 {
+  clear: right;
+  margin-top: 40px;
+}
+
+.container4 {
+  margin: 3PX;
+  padding: 3px;
+  width: 600px;
+  border: 3px solid blaCK;
+}
+
+.head4 {
+  font-weight: bold;
+  color: rgb(18, 116, 155);
+  text-decoration: underline;
+}
+
+/* styling book 3 */
+#book3 {
+  width: 250px;
+  float: left;
+  margin: 20px;
+
+}
+
+#parabook3 {
+  clear: right;
+  margin-top: 40px;
+}
+
+.container5 {
+  margin: 3PX;
+  padding: 3px;
+  width: 600px;
+  border: 3px solid black;
+}
+
+.bookcontainer {
+  display: flex;
+}
+
+/* responsiveness */
+@media (max-width:1300px) and (min-width:600px) {
+  .bookcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (max-width:600px) {
+  .bookcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container3,
+  .container4,
+  .container5 {
+    width: 350px;
+
+
+  }
+
+  .bookbtn {
+    margin-left: 90px;
+  }
+
+}
+
+/* pdf */
+.pdf {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* pdf1 */
+
+.pricehead {
+  text-align: center;
+  color: black;
+}
+
+.booklink {
+  text-decoration: none;
+  color: white;
+}
+
+.booklink:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.booklink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* buy now css */
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  margin: auto;
+  width: 600px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.buycontainer {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.buybtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.buybtn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:1000px) {
+  .buycontainer, .row{
+    width: 90%;
+  }
+  
+}
+
+/* About us  */
+
+.carousel {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.photo {
+  margin-left: 44%;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+@media (max-width:1040px) {
+  .photo{
+    margin: auto
+
+  }
+  .carousel slide{
+    width: 200px
+  }
+}
+@media (max-width:1040px){
+  .slidepic{
+width: 90vw
+  }
+  
+}
+
+
+/* contact us page  */
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container6 {
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container6 .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.container6 .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.content .left-side::before {
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container6 .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container6 {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+
+  .container6 .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+
+  .button input[type="button"] {
+    width: 80vw;
+  }
+
+  .container6 .content {
+    flex-direction: column-reverse;
+  }
+
+  .container6 .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container6 .content .left-side::before {
+    display: none;
+  }
+
+  .container6 .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:414px) {
+  .button input[type="button"] {
+    width: 70vw;
+  }
+}
+
+/* book feedback  */
+
+.fhead {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.container7,
+.container8 {
+  margin: 25px;
+}
+
+.item {
+  border: 2px solid black;
+  margin: 10px;
+}
+
+
+/* sahitya page css  */
+
+.sahityacontainer {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-gap: 10%;
+  margin-left: 30%;
+  margin-top: 5%;
+
+
+}
+
+.boxbtn {
+  height: 8em;
+  width: 15em;
+  color: white;
+}
+
+.sahityalink {
+  text-decoration: none;
+  color: white;
+}
+
+.sahityalink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width:1450px) {
+  .sahityacontainer {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 30%;
+    margin-left: 8%;
+    margin-top: 4%;
+
+  }
+
+
+}
+
+@media (max-width:750px) {
+  .sahityacontainer {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-gap: 5%;
+    margin-left: 10%;
+    margin-top: 4%;
+
+  }
+
+  .boxbtn {
+    height: 5em;
+  }
+
+}
+
+.main3 {
+  background-image: url(img/bg6.jpg);
+  background-size: 100%;
+  height: 100vh;
+}
+
+/* pathyapustak css */
+
+.pustakcontainer {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-gap: 10%;
+  margin-top: 5%;
+  margin-left: 7%;
+}
+
+.main4 {
+  background-image: url(img/bg5.jpg);
+  background-size: 100%;
+  height: 100vh;
+}
+
+.textbookbtn {
+  text-decoration: none;
+  color: white;
+}
+
+.textbookbtn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width:1450px) {
+  .pustakcontainer {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-gap: 8%;
+    margin-top: 5%;
+    margin-left: 7%;
+  }
+
+  .main4 {
+    background-repeat: repeat-y;
+  }
+
+}
+
+@media (max-width:800px) {
+  .pustakcontainer {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 7%;
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+
+  .main4 {
+    background-repeat: repeat-y;
+  }
+
+}
+
+/* tpdf css */
+
+.tpdf {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* footer css */
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* instagram */
+.fa-instagram{
+  background-color: rgb(187, 29, 134);
+  color: white;
+}
+
+/* linkedin */
+.fa-linkedin{
+  background-color: rgb(11, 74, 156);
+  color: white;
+}
+
+/* you-tube */
+.fa-youtube{
+  background-color: red;
+  color: white;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
